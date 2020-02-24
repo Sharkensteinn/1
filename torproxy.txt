@@ -1,0 +1,9 @@
+apt install tor
+chmod +x install.sh
+install.sh
+nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT=”ipv6.disable=1″
+GRUB_CMDLINE_LINUX=”ipv6.disable=1″
+Ctrl+x
+update-grub
+reboot
